@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet">
+  <title>Blog Post Manager</title>
+</head>
+<body>
+  <header>
+    <h1>Blog Post Manager</h1>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Posts</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Form to add a new post -->
+    <form id="postForm">
+      <h3>Welcome to this little corner of the internet, where you can share your thoughts and ideas effortlessly. Manage your blog posts easily
+         within just a few clicks.</h3>
+      <h2>Your Title</h2>
+      <input type="text" id="title" placeholder="Write your title" required>
+      <h2>Your Content</h2>
+      <textarea id="body" rows="5" placeholder="Write your Content..." required></textarea>
+      <button type="submit">Add Post</button>
+    </form>
+
+    <!-- Container for blog posts -->
+    <div id="postsContainer"></div>
+  </div>
+  <script src="script.js"></script>
+  <footer>
+    <h3>© 2024 Blog</h3>
+  </footer>
+</body>
+</html>
